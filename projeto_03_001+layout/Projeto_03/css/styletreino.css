@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+body,html{
+    height: 100%;
+    
+}
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    /*max-height: 700px; sem, fica mais preenchido*/
+    background-image: url('../imagens/capa.png');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid red;/*não esquecer de retirar*/
+}
+header nav{
+    float: right;
+}
+.logo{
+    background-image: url(../imagens/logo.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 21px;
+    text-indent: -999px;
+    float: left;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav li{
+    float: left;
+    padding: 0 20px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header li a:hover{
+    color: indigo;
+    
+}
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 200px 100px;
+}
+.chamada1 h2{
+    font-size: 40px;
+    color: white;
+    line-height: 1;
+    text-shadow: 3px 3px 5px black;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 600;
+}
+section.sessao1{
+    width: 100%;
+    background: #472562;
+    padding: 0 2%;
+}
+.texto-sessao1{
+    color: white;
+
+}

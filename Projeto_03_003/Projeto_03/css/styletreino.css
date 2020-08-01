@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+body,html{
+    height: 100%;
+    
+}
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    /*max-height: 700px; sem, fica mais preenchido*/
+    background-image: url('../imagens/capa.png');
+    background-position: center;
+    background-size: cover;
+    font-weight: 300;
+    
+}
+
+.logo{
+    background-image: url(../imagens/logo.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 21px;
+    text-indent: -999px;
+    float: left;
+}
+header nav{
+    float: right;
+}
+nav.mobile-menu{
+    display: none;
+}
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+header nav.desktop-menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header li a:hover{
+    color: indigo;
+    
+}
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 140px 150px;
+}
+.chamada1 h2{
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    line-height: 1;
+    text-shadow: 3px 3px 5px black;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 300;
+}
+section.sessao1{
+    background: #472562;
+    width: 100%;
+    padding: 0 2%;
+    height: 400px;
+}
+section.sessao1 .container{
+    max-width: 1000px;
+}
+.texto-sessao1{
+    color: white;
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 55px;
+    margin-top: 60px;
+    padding-left: 80px;
+}
+.texto-sessao1 h2{
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.texto-sessao1 p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: inside;
+}
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+.btn1-texto{
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 44px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+.device-sessao1{
+    float: left;
+    background-image: url('../imagens/device.png');
+    width: 50%;
+    height: 430px;
+    position: relative;
+    top: -30px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+    .chamada1 h2{
+        font-weight: 300;
+        font-size: 30px;
+        padding: 0 0px;
+    }
+    .chamada1 p{
+        font-size:15px;
+        color: white;
+        margin-top: 10px;
+    }
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .texto-sessao1{
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+        position: static;
+        float: none;
+        display: inline-block;
+    }
+    .texto-sessao1 ul{
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+    }
+    .btn1-texto{
+        display: inline-block;
+    }
+    .device-sessao1{
+        display: none;
+    }
+}
